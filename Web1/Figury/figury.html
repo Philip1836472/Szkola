@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figury</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      ctx.fillStyle = '#FF6B6B';
+      ctx.fillRect(50, 50, 80, 80);
+
+      ctx.fillStyle = '#4ECDC4';
+      ctx.fillRect(160, 60, 140, 60);
+
+      ctx.fillStyle = '#45B7D1';
+      ctx.beginPath();
+      ctx.arc(360, 90, 40, 0, Math.PI * 2);
+      ctx.fill();
+    </script>
+</body>
+</html>
