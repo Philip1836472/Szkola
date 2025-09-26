@@ -13,7 +13,7 @@
   "author": "Filip Zawierucha",
   "type": "commonjs",
   "scripts": {
-    "build:frontend": "webpack && cp src/frontend/index.html dist/ && cp src/frontend/style.css dist/",
+    "build:frontend": "webpack && npx cpx src/frontend/index.html dist/ && npx cpx src/frontend/style.css dist/",
     "build:backend": "tsc -p tsconfig.backend.json",
     "build": "npm run build:frontend && npm run build:backend",
     "electron": "electron .",
